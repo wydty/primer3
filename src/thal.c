@@ -46,6 +46,13 @@
 #include <math.h>
 // #include <unistd.h> COMMENTED OUT BY NC unused and breaks Windows build
 
+// Load in the R header
+#include <R.h>
+// Define strict headers
+#define STRICT_R_HEADERS
+// Map printf to Rprintf
+#define printf Rprintf
+
 #if defined(__sun)
 #include <ieeefp.h>
 #endif
